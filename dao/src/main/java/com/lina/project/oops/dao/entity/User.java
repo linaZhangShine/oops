@@ -1,4 +1,4 @@
-package com.lina.project.oops.entity;
+package com.lina.project.oops.dao.entity;
 
 public class User
 {
@@ -13,7 +13,7 @@ public class User
     private int id;
     private String userName;
     private String password;
-    private int role;
+    private Role role;
 
     public String getUserName()
     {
@@ -35,12 +35,12 @@ public class User
         this.password = password;
     }
 
-    public int getRole()
+    public Role getRole()
     {
         return role;
     }
 
-    public void setRole(int role)
+    public void setRole(Role role)
     {
         this.role = role;
     }

@@ -1,10 +1,14 @@
-package com.lina.project.oops.service;
+package com.lina.project.oops.dao.service;
 
-import com.lina.project.oops.dao.UserDao;
-import com.lina.project.oops.entity.User;
+import com.lina.project.oops.dao.database.UserDao;
+import com.lina.project.oops.dao.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserDaoService
 {
+    @Autowired
     private UserDao userDao;
 
     public UserDao getUserDao()

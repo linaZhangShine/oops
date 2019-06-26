@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    username: root
+    password: Lina@19930918
+    url: jdbc:mysql://127.0.0.1:3306/oops?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/userMapper.xml
+  type-aliases-package: com.lina.project.oops.dao.entity
+
